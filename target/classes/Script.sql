@@ -8,6 +8,7 @@ CREATE TABLE Vehicles (
  PRIMARY KEY (vehicle_no));
 
  
+
  
  shankar Script
  DROP TABLE IF EXISTS trucks_list;
@@ -19,3 +20,16 @@ CREATE TABLE trucks_list (
  Truck_Owner VARCHAR(40) NOT NULL,
  DriverMoNo VARCHAR(40) NOT NULL,
  PRIMARY KEY (id));
+=======
+ Bhagyashree Script:
+ 
+ DROP TABLE IF EXISTS `suppliers`;
+CREATE TABLE `suppliers` (
+  `sid` int(11) NOT NULL AUTO_INCREMENT,
+  `sname` varchar(45) DEFAULT NULL,
+  `sphone` bigint(12) DEFAULT NULL,
+  `saddress` varchar(45) DEFAULT NULL,
+  `semailid` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`sid`)
+);
+
