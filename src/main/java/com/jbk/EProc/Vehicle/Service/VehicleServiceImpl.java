@@ -7,9 +7,11 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.jbk.EProc.Vehicle.Bean.Truck;
 import com.jbk.EProc.Vehicle.Bean.Vehicles;
 import com.jbk.EProc.Vehicle.Dao.VehicleDao;
 import com.jbk.EProc.Vehicle.Dao.VehicleDaoImpl;
+
 
 @Service
 @Transactional
@@ -67,5 +69,11 @@ public class VehicleServiceImpl implements VehicleService {
 		int maxload = getVehicle(veh).getMaxLoad();
 		return maxload;
 	}
+	
+	//shankar
+	public List<Truck> fetchAllTruck() {
+		
+		 return vehicleDao.fetchAllTruck();
+		}
 
 }

@@ -2,7 +2,9 @@ package com.jbk.EProc.Vehicle.Service;
 
 import java.util.List;
 
+import com.jbk.EProc.Vehicle.Bean.Truck;
 import com.jbk.EProc.Vehicle.Bean.Vehicles;
+
 
 public interface VehicleService {
 	public String addVehicle(String veh, int maxload);
@@ -18,4 +20,7 @@ public interface VehicleService {
 	public int getLoadedWt(String veh);
 	
 	public int getMaxLoad(String veh);
+	
+	//shankar
+	public List<Truck> fetchAllTruck();
 }
