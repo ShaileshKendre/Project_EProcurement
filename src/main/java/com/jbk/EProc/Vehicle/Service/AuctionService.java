@@ -1,8 +1,9 @@
-package com.owner.service;
+package com.jbk.EProc.Vehicle.Service;
 
 import java.util.List;
 
-import com.owner.domain.Auction;
+import com.jbk.EProc.Vehicle.Bean.Auction;
+
 
 public interface AuctionService {
 

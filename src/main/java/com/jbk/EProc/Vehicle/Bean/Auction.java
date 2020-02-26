@@ -1,4 +1,4 @@
-package com.owner.domain;
+package com.jbk.EProc.Vehicle.Bean;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package com.owner.dao;
+package com.jbk.EProc.Vehicle.Dao;
 
 import java.util.List;
 
@@ -6,8 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import com.owner.dao.mapper.AuctionMapper;
-import com.owner.domain.Auction;
+import com.jbk.EProc.Vehicle.Bean.Auction;
+import com.jbk.EProc.Vehicle.Bean.AuctionMapper;
+
 
 @Repository
 public class AuctionDaoImp implements AuctionDao {

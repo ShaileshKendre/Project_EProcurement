@@ -1,8 +1,9 @@
-package com.owner.dao;
+package com.jbk.EProc.Vehicle.Dao;
 
 import java.util.List;
 
-import com.owner.domain.Auction;
+import com.jbk.EProc.Vehicle.Bean.Auction;
+
 
 public interface AuctionDao {
 

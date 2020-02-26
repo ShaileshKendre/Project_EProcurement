@@ -1,11 +1,10 @@
-package com.owner.dao.mapper;
+package com.jbk.EProc.Vehicle.Bean;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
 
-import com.owner.domain.Auction;
 
 public class AuctionMapper implements RowMapper<Auction> {
 

@@ -1,6 +1,6 @@
-package com.owner.controller;
+package com.jbk.EProc.Vehicle.Controller;
 
-import com.owner.domain.Auction;
+import com.jbk.EProc.Vehicle.Bean.Auction;
 
 public class NosuchIdFoundException extends Auction {
 

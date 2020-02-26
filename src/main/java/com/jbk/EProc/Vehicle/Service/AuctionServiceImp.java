@@ -1,12 +1,12 @@
-package com.owner.service;
+package com.jbk.EProc.Vehicle.Service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.owner.dao.AuctionDaoImp;
-import com.owner.domain.Auction;
+import com.jbk.EProc.Vehicle.Bean.Auction;
+import com.jbk.EProc.Vehicle.Dao.AuctionDaoImp;
 
 @Service
 public class AuctionServiceImp implements AuctionService{

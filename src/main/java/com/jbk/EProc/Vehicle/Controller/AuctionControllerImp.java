@@ -1,4 +1,4 @@
-package com.owner.controller;
+package com.jbk.EProc.Vehicle.Controller;
 
 import java.util.List;
 
@@ -13,8 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.owner.domain.Auction;
-import com.owner.service.AuctionServiceImp;
+import com.jbk.EProc.Vehicle.Bean.Auction;
+import com.jbk.EProc.Vehicle.Service.AuctionServiceImp;
+
 
 @CrossOrigin
 @RestController
