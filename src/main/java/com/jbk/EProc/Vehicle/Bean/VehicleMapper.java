@@ -5,6 +5,8 @@ import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
 
+
+
 public class VehicleMapper implements RowMapper<Vehicles> {
 
 	@Override
@@ -16,5 +18,7 @@ public class VehicleMapper implements RowMapper<Vehicles> {
 		vehicles.setMaxLoad(rs.getInt("max_load"));
 		return vehicles;
 	}
+
+	
 
 }

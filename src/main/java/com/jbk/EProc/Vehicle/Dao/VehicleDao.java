@@ -2,6 +2,7 @@ package com.jbk.EProc.Vehicle.Dao;
 
 import java.util.List;
 
+import com.jbk.EProc.Vehicle.Bean.Truck;
 import com.jbk.EProc.Vehicle.Bean.Vehicles;
 
 public interface VehicleDao {
@@ -15,4 +16,7 @@ public interface VehicleDao {
 
 	public String reduceLoadBy(String veh, int loadtoreduce);
 
+	//shankar
+	public List<Truck> fetchAllTruck();
+	
 }

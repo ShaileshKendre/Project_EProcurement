@@ -7,8 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
+import com.jbk.EProc.Vehicle.Bean.Truck;
+import com.jbk.EProc.Vehicle.Bean.TruckMapper;
 import com.jbk.EProc.Vehicle.Bean.VehicleMapper;
 import com.jbk.EProc.Vehicle.Bean.Vehicles;
+
 
 @Repository
 public class VehicleDaoImpl implements VehicleDao {
@@ -51,6 +54,13 @@ public class VehicleDaoImpl implements VehicleDao {
 		jdbcTemplate.update(SET_LOADED_WT, (presentload - loadtoreduce), veh);
 		return "Load Reduced Successfully...!";
 
+	}
+	
+	    //shankar
+	public List<Truck> fetchAllTruck() {
+		// TODO Auto-generated method stub
+		 String query = "select * from trucks_list";
+			return (List<Truck>)jdbcTemplate.query(query,new TruckMapper());
 	}
 
 }

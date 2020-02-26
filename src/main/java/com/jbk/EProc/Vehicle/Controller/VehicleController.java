@@ -16,8 +16,10 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.jbk.EProc.Vehicle.Bean.Truck;
 import com.jbk.EProc.Vehicle.Bean.Vehicles;
 import com.jbk.EProc.Vehicle.Service.VehicleServiceImpl;
+
 
 @CrossOrigin
 @RestController
@@ -76,5 +78,15 @@ public class VehicleController {
 		return vehicleService.reduceLoadBy(veh, loadtoreduce);
 
 	}
+	
+	//shankar
+	
+	@GetMapping("truckList")
+	public List<Truck> fetchAllTruck() {
+		/*List<Truck> listOfTrucks=truckService.getAllTruck();
+		model.addAttribute("list", listOfTrucks);*/
+		return vehicleService.fetchAllTruck();
+	}
+	
 
 }
