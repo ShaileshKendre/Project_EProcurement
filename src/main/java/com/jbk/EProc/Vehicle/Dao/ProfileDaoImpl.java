@@ -15,11 +15,8 @@ public class ProfileDaoImpl {
 	public   JdbcTemplate jdbcTemplate;
 	
 	//private final static String GET_PROFILE="select from profile where username=? and password=?";
+	private final static String GET_PROFILE="select from profile where username=? and password=?";
 
-
-	
-	
-	
 	public Profile getProfile(String  username,String password) {
 		if (checkprofile(username, password)!=null) {
 			String sql="select * from profile where username='"+username+"' and password='"+password+"'";
@@ -45,7 +42,7 @@ public class ProfileDaoImpl {
 		try {	
 			String sql="select * from profile where username='"+username+"' and password='"+password+"'";
 		
-	         Profile profile= jdbcTemplate.queryForObject(sql,  new ProfileMapper());
+	         Profile profile= jdbcTemplate.queryForObject(sql, new ProfileMapper());
 	         return profile;
 	    
 	   
