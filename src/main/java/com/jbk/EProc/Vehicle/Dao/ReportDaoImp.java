@@ -81,7 +81,7 @@ public class ReportDaoImp implements ReportDao {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return destination = "wrong format";
+		return destination = " Given format is wrong ";
 
 	}
 
