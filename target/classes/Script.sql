@@ -32,3 +32,13 @@ CREATE TABLE `suppliers` (
   PRIMARY KEY (`sid`)
 );
  
+Shashikant Script:
+ 
+ DROP TABLE IF EXISTS `supplier`;
+CREATE TABLE `supplier` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) DEFAULT NULL,
+  `phone`varchar(20) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
