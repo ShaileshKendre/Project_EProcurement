@@ -7,8 +7,7 @@ CREATE TABLE Vehicles (
  max_load INT,
  PRIMARY KEY (vehicle_no));
 
- 
-
+  shankar:
  
  shankar Script
  DROP TABLE IF EXISTS trucks_list;
@@ -20,7 +19,7 @@ CREATE TABLE trucks_list (
  Truck_Owner VARCHAR(40) NOT NULL,
  DriverMoNo VARCHAR(40) NOT NULL,
  PRIMARY KEY (id));
-=======
+ 
  Bhagyashree Script:
  
  DROP TABLE IF EXISTS `suppliers`;
@@ -32,4 +31,4 @@ CREATE TABLE `suppliers` (
   `semailid` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`sid`)
 );
-
+ 
